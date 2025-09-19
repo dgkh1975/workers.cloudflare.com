@@ -1,0 +1,21 @@
+html #ot-sdk-btn.ot-sdk-show-settings {
+  color: inherit;
+  border: none !important;
+  transition: none !important;
+  padding: 0 !important;
+  line-height: inherit !important;
+  font-size: inherit !important;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+html #ot-sdk-btn.ot-sdk-show-settings:hover {
+  background-color: transparent;
+  color: var(--accent-color);
+}
+
+html #ot-sdk-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}

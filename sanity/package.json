@@ -1,32 +1,38 @@
 {
-  "name": "builtwithworkers",
+  "name": "@cloudflare/built-with-workers",
   "private": true,
   "version": "1.0.0",
-  "description": "",
   "main": "package.json",
-  "author": "Kristian Freeman <kristian@cloudflare.com>",
   "license": "UNLICENSED",
   "scripts": {
+    "dev": "sanity dev",
     "start": "sanity start",
-    "test": "sanity check"
+    "build": "sanity build",
+    "deploy": "sanity deploy",
+    "deploy-graphql": "sanity graphql deploy"
   },
   "keywords": [
     "sanity"
   ],
   "dependencies": {
-    "@sanity/base": "^1.148.2",
-    "@sanity/components": "^1.148.1",
-    "@sanity/core": "^1.148.1",
-    "@sanity/default-layout": "^1.148.1",
-    "@sanity/default-login": "^1.148.1",
-    "@sanity/desk-tool": "^1.148.1",
-    "prop-types": "^15.6",
-    "react": "^16.2",
-    "react-dom": "^16.2",
-    "sanity-plugin-markdown": "^1.0.1"
+    "@sanity/vision": "^3.48.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sanity": "^3.48.0",
+    "sanity-plugin-markdown": "^4.1.2",
+    "styled-components": "^6.1.8"
   },
   "devDependencies": {
-    "@sanity/cli": "^1.148.1",
-    "yargs": "^14.2.0"
+    "@sanity/eslint-config-studio": "^4.0.0",
+    "@types/react": "^18.0.25",
+    "eslint": "^8.6.0",
+    "prettier": "^3.0.2",
+    "typescript": "^5.1.6"
+  },
+  "prettier": {
+    "semi": false,
+    "printWidth": 100,
+    "bracketSpacing": false,
+    "singleQuote": true
   }
 }
